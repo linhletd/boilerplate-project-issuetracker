@@ -96,8 +96,8 @@
         });
         $('#testForm3').submit(function(e) {
           $.ajax({
-            url: '/api/issues/apitest',
-            type: 'delete',
+            url: '/api/issues/apitest/delete',
+            type: 'post',
             data: $('#testForm3').serialize(),
             success: function(data) {
               $('#jsonResult').text(JSON.stringify(data));
